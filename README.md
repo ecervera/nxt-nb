@@ -1,6 +1,6 @@
 # NXT Notebooks
 
-Examples with [NXT-Python](https://github.com/Eelviny/nxt-python)
+Examples with [NXT-Python](https://github.com/Eelviny/nxt-python), using Bluetooth connection on Linux.
 
 ## Prerequisites
 
