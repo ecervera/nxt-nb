@@ -1,13 +1,22 @@
 import nxt.bluesock
 import nxt.motor
+import nxt.sensor
 
 from bluetooth.btcommon import BluetoothError
 
+Motor = nxt.motor.Motor
 PORT_A = nxt.motor.PORT_A
 PORT_B = nxt.motor.PORT_B
 PORT_C = nxt.motor.PORT_C
 
-Motor = nxt.motor.Motor
+Touch = nxt.sensor.Touch
+Light = nxt.sensor.Light
+Ultrasonic = nxt.sensor.Ultrasonic
+
+PORT_1 = nxt.sensor.PORT_1
+PORT_2 = nxt.sensor.PORT_2
+PORT_3 = nxt.sensor.PORT_3
+PORT_4 = nxt.sensor.PORT_4
 
 def connectar(n):
     try:
@@ -19,7 +28,6 @@ def connectar(n):
             print("No es pot connectar, ja hi ha un altre programa. Has de desconnectar-lo abans!")
         elif errno==13:
             print("No es pot connectar, el dispositiu no està emparellat.")
-
         elif errno == 112:
             print("No es troba el brick, assegurat que estiga encés.")
         else:
